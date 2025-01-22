@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorradsuche</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Motorradsuche</h1>
+    </header>
+
+    <main>
+        <section class="search-form">
+            <h2>Finde dein perfektes Motorrad</h2>
+            <form id="searchForm">
+                <label for="type">Typ:</label>
+                <select id="type" name="type">
+                    <option value="">Wähle einen Typ</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Touring">Touring</option>
+                    <option value="Offroad">Offroad</option>
+                </select>
+
+                <label for="minSpeed">Mindestgeschwindigkeit (km/h):</label>
+                <input type="number" id="minSpeed" name="minSpeed" placeholder="z. B. 150">
+
+                <label for="maxPrice">Maximaler Preis (CHF):</label>
+                <input type="number" id="maxPrice" name="maxPrice" placeholder="z. B. 10000">
+
+                <button type="submit">Suchen</button>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Suchergebnisse</h2>
+            <div id="resultsContainer">
+                <p>Gib oben deine Kriterien ein und klicke auf "Suchen", um Ergebnisse anzuzeigen.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Motorradsuche</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
